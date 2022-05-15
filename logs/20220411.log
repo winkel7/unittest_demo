@@ -1,0 +1,196 @@
+[zhangsan: 2022-04-11 20:22:09,000] test_add.py:45-INFO: [test_add] 用例---【新增项目成功】---执行通过
+[zhangsan: 2022-04-11 20:22:09,268] test_invest.py:47-ERROR: [test_invest] 用例---【投资人正常投资】---执行失败
+[zhangsan: 2022-04-11 20:22:09,269] test_invest.py:48-ERROR: [test_invest] 0 != 2
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+[zhangsan: 2022-04-11 20:22:09,308] test_invest.py:51-INFO: [test_invest] 用例---【投资人id为空】---执行通过
+[zhangsan: 2022-04-11 20:22:09,350] test_invest.py:51-INFO: [test_invest] 用例---【标id为空】---执行通过
+[zhangsan: 2022-04-11 20:22:09,383] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额为空】---执行失败
+[zhangsan: 2022-04-11 20:22:09,383] test_invest.py:48-ERROR: [test_invest] '金额为空' not found in '余额为空'
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 45, in test_invest
+    self.assertIn(expected['msg'], res['msg'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 1179, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' not found in '余额为空'
+[zhangsan: 2022-04-11 20:22:09,408] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额为非100的整数】---执行失败
+[zhangsan: 2022-04-11 20:22:09,408] test_invest.py:48-ERROR: [test_invest] 1 != 2
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+[zhangsan: 2022-04-11 20:22:09,449] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额大于可投金额】---执行失败
+[zhangsan: 2022-04-11 20:22:09,449] test_invest.py:48-ERROR: [test_invest] 1 != 2
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+[zhangsan: 2022-04-11 20:22:09,501] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额超过用户余额】---执行失败
+[zhangsan: 2022-04-11 20:22:09,502] test_invest.py:48-ERROR: [test_invest] 1 != 2
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+[zhangsan: 2022-04-11 20:22:09,580] test_recharge.py:50-INFO: [test_recharge] 用例---【充值成功】---执行通过
+[zhangsan: 2022-04-11 20:22:09,623] test_recharge.py:50-INFO: [test_recharge] 用例---【id错误】---执行通过
+[zhangsan: 2022-04-11 20:22:09,663] test_recharge.py:50-INFO: [test_recharge] 用例---【不输入id】---执行通过
+[zhangsan: 2022-04-11 20:22:09,693] test_recharge.py:47-ERROR: [test_recharge] 用例---【不输入金额】---执行失败
+[zhangsan: 2022-04-11 20:22:09,738] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额为负数】---执行通过
+[zhangsan: 2022-04-11 20:22:09,770] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额为500001】---执行通过
+[zhangsan: 2022-04-11 20:22:09,806] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额非数字】---执行通过
+[zhangsan: 2022-04-11 20:22:09,839] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额小数点3位】---执行通过
+[zhangsan: 2022-04-11 20:22:09,950] test_register.py:44-INFO: [test_register] 用例---【注册成功-带注册名】---执行通过
+[zhangsan: 2022-04-11 20:22:10,075] test_register.py:44-INFO: [test_register] 用例---【成功-不带用户名】---执行通过
+[zhangsan: 2022-04-11 20:22:10,109] test_register.py:44-INFO: [test_register] 用例---【不输入手机号】---执行通过
+[zhangsan: 2022-04-11 20:22:10,138] test_register.py:44-INFO: [test_register] 用例---【手机号长度10位】---执行通过
+[zhangsan: 2022-04-11 20:22:10,173] test_register.py:44-INFO: [test_register] 用例---【手机号长度12位】---执行通过
+[zhangsan: 2022-04-11 20:22:10,278] test_register.py:44-INFO: [test_register] 用例---【已注册过的手机号】---执行通过
+[zhangsan: 2022-04-11 20:22:10,328] test_register.py:44-INFO: [test_register] 用例---【密码7位】---执行通过
+[zhangsan: 2022-04-11 20:22:10,359] test_register.py:44-INFO: [test_register] 用例---【密码17位】---执行通过
+[zhangsan: 2022-04-11 20:22:10,398] test_register.py:44-INFO: [test_register] 用例---【不输入密码】---执行通过
+[zhangsan: 2022-04-11 20:22:10,448] test_register.py:44-INFO: [test_register] 用例---【注册名11位】---执行通过
+[zhangsan: 2022-04-11 20:22:10,478] test_register.py:44-INFO: [test_register] 用例---【类型输入非0，1内容】---执行通过
+[zhangsan: 2022-04-11 20:22:10,604] test_register.py:44-INFO: [test_register] 用例---【手机号为字符串类型】---执行通过
+[zhangsan: 2022-04-11 20:33:16,120] test_add.py:45-INFO: [test_add] 用例---【新增项目成功】---执行通过
+[zhangsan: 2022-04-11 20:33:16,420] test_invest.py:51-INFO: [test_invest] 用例---【投资人正常投资】---执行通过
+[zhangsan: 2022-04-11 20:33:16,466] test_invest.py:51-INFO: [test_invest] 用例---【投资人id为空】---执行通过
+[zhangsan: 2022-04-11 20:33:16,490] test_invest.py:51-INFO: [test_invest] 用例---【标id为空】---执行通过
+[zhangsan: 2022-04-11 20:33:16,530] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额为空】---执行失败
+[zhangsan: 2022-04-11 20:33:16,530] test_invest.py:48-ERROR: [test_invest] '金额为空' not found in '余额为空'
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 45, in test_invest
+    self.assertIn(expected['msg'], res['msg'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 1179, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' not found in '余额为空'
+[zhangsan: 2022-04-11 20:33:16,574] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额为非100的整数】---执行失败
+[zhangsan: 2022-04-11 20:33:16,574] test_invest.py:48-ERROR: [test_invest] 1 != 2
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+[zhangsan: 2022-04-11 20:33:16,620] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额大于可投金额】---执行失败
+[zhangsan: 2022-04-11 20:33:16,620] test_invest.py:48-ERROR: [test_invest] 1 != 2
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+[zhangsan: 2022-04-11 20:33:16,667] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额超过用户余额】---执行失败
+[zhangsan: 2022-04-11 20:33:16,667] test_invest.py:48-ERROR: [test_invest] 1 != 0
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+[zhangsan: 2022-04-11 20:33:16,820] test_recharge.py:50-INFO: [test_recharge] 用例---【充值成功】---执行通过
+[zhangsan: 2022-04-11 20:33:16,859] test_recharge.py:50-INFO: [test_recharge] 用例---【id错误】---执行通过
+[zhangsan: 2022-04-11 20:33:16,890] test_recharge.py:50-INFO: [test_recharge] 用例---【不输入id】---执行通过
+[zhangsan: 2022-04-11 20:33:16,931] test_recharge.py:47-ERROR: [test_recharge] 用例---【不输入金额】---执行失败
+[zhangsan: 2022-04-11 20:33:16,992] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额为负数】---执行通过
+[zhangsan: 2022-04-11 20:33:17,021] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额为500001】---执行通过
+[zhangsan: 2022-04-11 20:33:17,066] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额非数字】---执行通过
+[zhangsan: 2022-04-11 20:33:17,120] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额小数点3位】---执行通过
+[zhangsan: 2022-04-11 20:33:17,253] test_register.py:44-INFO: [test_register] 用例---【注册成功-带注册名】---执行通过
+[zhangsan: 2022-04-11 20:33:17,374] test_register.py:44-INFO: [test_register] 用例---【成功-不带用户名】---执行通过
+[zhangsan: 2022-04-11 20:33:17,410] test_register.py:44-INFO: [test_register] 用例---【不输入手机号】---执行通过
+[zhangsan: 2022-04-11 20:33:17,440] test_register.py:44-INFO: [test_register] 用例---【手机号长度10位】---执行通过
+[zhangsan: 2022-04-11 20:33:17,474] test_register.py:44-INFO: [test_register] 用例---【手机号长度12位】---执行通过
+[zhangsan: 2022-04-11 20:33:17,590] test_register.py:44-INFO: [test_register] 用例---【已注册过的手机号】---执行通过
+[zhangsan: 2022-04-11 20:33:17,620] test_register.py:44-INFO: [test_register] 用例---【密码7位】---执行通过
+[zhangsan: 2022-04-11 20:33:19,260] test_add.py:45-INFO: [test_add] 用例---【新增项目成功】---执行通过
+[zhangsan: 2022-04-11 20:33:19,560] test_invest.py:51-INFO: [test_invest] 用例---【投资人正常投资】---执行通过
+[zhangsan: 2022-04-11 20:33:19,590] test_invest.py:51-INFO: [test_invest] 用例---【投资人id为空】---执行通过
+[zhangsan: 2022-04-11 20:33:19,635] test_invest.py:51-INFO: [test_invest] 用例---【标id为空】---执行通过
+[zhangsan: 2022-04-11 20:33:19,660] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额为空】---执行失败
+[zhangsan: 2022-04-11 20:33:19,660] test_invest.py:48-ERROR: [test_invest] '金额为空' not found in '余额为空'
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 45, in test_invest
+    self.assertIn(expected['msg'], res['msg'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 1179, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' not found in '余额为空'
+[zhangsan: 2022-04-11 20:33:19,718] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额为非100的整数】---执行失败
+[zhangsan: 2022-04-11 20:33:19,719] test_invest.py:48-ERROR: [test_invest] 1 != 2
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+[zhangsan: 2022-04-11 20:33:19,760] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额大于可投金额】---执行失败
+[zhangsan: 2022-04-11 20:33:19,760] test_invest.py:48-ERROR: [test_invest] 1 != 2
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+[zhangsan: 2022-04-11 20:33:19,810] test_invest.py:47-ERROR: [test_invest] 用例---【投资金额超过用户余额】---执行失败
+[zhangsan: 2022-04-11 20:33:19,810] test_invest.py:48-ERROR: [test_invest] 1 != 0
+Traceback (most recent call last):
+  File "E:\TEST\unittest_demo\testcases\test_invest.py", line 44, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+[zhangsan: 2022-04-11 20:33:19,970] test_recharge.py:50-INFO: [test_recharge] 用例---【充值成功】---执行通过
+[zhangsan: 2022-04-11 20:33:20,000] test_recharge.py:50-INFO: [test_recharge] 用例---【id错误】---执行通过
+[zhangsan: 2022-04-11 20:33:20,041] test_recharge.py:50-INFO: [test_recharge] 用例---【不输入id】---执行通过
+[zhangsan: 2022-04-11 20:33:20,070] test_recharge.py:47-ERROR: [test_recharge] 用例---【不输入金额】---执行失败
+[zhangsan: 2022-04-11 20:33:20,090] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额为负数】---执行通过
+[zhangsan: 2022-04-11 20:33:20,129] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额为500001】---执行通过
+[zhangsan: 2022-04-11 20:33:20,150] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额非数字】---执行通过
+[zhangsan: 2022-04-11 20:33:20,190] test_recharge.py:50-INFO: [test_recharge] 用例---【充值金额小数点3位】---执行通过
+[zhangsan: 2022-04-11 20:33:20,290] test_register.py:44-INFO: [test_register] 用例---【注册成功-带注册名】---执行通过
+[zhangsan: 2022-04-11 20:33:20,412] test_register.py:44-INFO: [test_register] 用例---【成功-不带用户名】---执行通过
+[zhangsan: 2022-04-11 20:33:20,442] test_register.py:44-INFO: [test_register] 用例---【不输入手机号】---执行通过
+[zhangsan: 2022-04-11 20:33:20,470] test_register.py:44-INFO: [test_register] 用例---【手机号长度10位】---执行通过
+[zhangsan: 2022-04-11 20:33:20,490] test_register.py:44-INFO: [test_register] 用例---【手机号长度12位】---执行通过
+[zhangsan: 2022-04-11 20:33:20,610] test_register.py:44-INFO: [test_register] 用例---【已注册过的手机号】---执行通过
+[zhangsan: 2022-04-11 20:33:20,638] test_register.py:44-INFO: [test_register] 用例---【密码7位】---执行通过
+[zhangsan: 2022-04-11 20:33:20,670] test_register.py:44-INFO: [test_register] 用例---【密码17位】---执行通过
+[zhangsan: 2022-04-11 20:33:20,700] test_register.py:44-INFO: [test_register] 用例---【不输入密码】---执行通过
+[zhangsan: 2022-04-11 20:33:20,744] test_register.py:44-INFO: [test_register] 用例---【注册名11位】---执行通过
+[zhangsan: 2022-04-11 20:33:20,766] test_register.py:44-INFO: [test_register] 用例---【类型输入非0，1内容】---执行通过
+[zhangsan: 2022-04-11 20:33:20,901] test_register.py:44-INFO: [test_register] 用例---【手机号为字符串类型】---执行通过
